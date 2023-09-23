@@ -1,0 +1,22 @@
+{
+    "name": "fux-framework/fux-cli",
+    "description": "A CLI tool that help development process using Fux Framework",
+    "autoload": {
+        "psr-4": {
+            "Fux\\Cli\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matteo Fusillo",
+            "email": "58771053+mfusillo98@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^6.3",
+        "php": "^8.0"
+    },
+    "bin": [
+        "bin/fux"
+    ]
+}
