@@ -6,8 +6,8 @@
     <img alt="Preview" src="/art/preview.png">
     <p align="center">
         <a href="https://github.com/Fux-Framwork/fux-cli/actions"><img alt="Build Status" src="https://github.com/Fux-Framwork/fux-cli/workflows/CI/badge.svg"></a>
-        <a href="//packagist.org/packages/Fux-Framwork/fux-cli"><img alt="Latest Stable Version" src="https://poser.pugx.org/Fux-Framwork/fux-cli/v"></a>
-        <a href="//packagist.org/packages/Fux-Framwork/fux-cli"><img alt="License" src="https://poser.pugx.org/Fux-Framwork/fux-cli/license"></a>
+        <a href="//packagist.org/packages/fux/fux-cli"><img alt="Latest Stable Version" src="https://poser.pugx.org/fux/fux-cli/v"></a>
+        <a href="//packagist.org/packages/fux/fux-cli"><img alt="License" src="https://poser.pugx.org/fux/fux-cli/license"></a>
     </p>
 </p>
 
