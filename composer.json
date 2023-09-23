@@ -1,5 +1,5 @@
 {
-    "name": "fux-framework/fux-cli",
+    "name": "fux/fux-cli",
     "description": "A CLI tool that help development process using Fux Framework",
     "autoload": {
         "psr-4": {
