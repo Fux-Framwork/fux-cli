@@ -3,7 +3,7 @@
     "description": "A CLI tool that help development process using Fux Framework",
     "autoload": {
         "psr-4": {
-            "Fux\\Cli\\": "src/"
+            "FuxCli\\": "src/"
         }
     },
     "authors": [

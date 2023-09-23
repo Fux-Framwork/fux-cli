@@ -1,6 +1,6 @@
 <?php
 
-namespace Fux\Cli\Commands\Database;
+namespace FuxCli\Commands\Database;
 
 use Fux\Cli\Utils\PathUtils;
 use Symfony\Component\Console\Command\Command;

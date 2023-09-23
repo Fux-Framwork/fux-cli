@@ -16,7 +16,7 @@ $application = new Application();
 /**
  * @MARK db:* commands
 */
-$application->add(new \Fux\Cli\Commands\Database\Vcs());
-$application->add(new \Fux\Cli\Commands\Database\Iam());
+$application->add(new \FuxCli\Commands\Database\Vcs());
+$application->add(new \FuxCli\Commands\Database\Iam());
 
 $application->run();

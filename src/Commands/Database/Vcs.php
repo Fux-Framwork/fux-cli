@@ -1,8 +1,8 @@
 <?php
 
-namespace Fux\Cli\Commands\Database;
+namespace FuxCli\Commands\Database;
 
-use Fux\Cli\Utils\PathUtils;
+use FuxCli\Utils\PathUtils;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

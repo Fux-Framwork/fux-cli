@@ -1,6 +1,6 @@
 <?php
 
-namespace Fux\Cli\Utils;
+namespace FuxCli\Utils;
 
 class PathUtils
 {
