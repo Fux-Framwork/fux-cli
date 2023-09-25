@@ -49,7 +49,7 @@ class Iam extends Command
             return Command::FAILURE;
         }
 
-        $rootDir = PathUtils::getProjectRoot();
+        $rootDir = getcwd();
 
         $dbDir = "$rootDir/db";
         if (!file_exists($dbDir) && !mkdir($dbDir, 0777, true)) {

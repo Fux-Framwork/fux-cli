@@ -11,51 +11,37 @@
     </p>
 </p>
 
-## Instal
+## Usage as executable
 
-This CLI application is a small game written in PHP and is installed using [Composer](https://getcomposer.org):
+You can use this CLI tool just by build downloading the ./dist/fux-cli.phar file or building it from scratch executing
+the
+following command
 
-```
-composer global require fux/fux-cli
-```
+`php phar-composer-1.4.0.phar build . dist`
 
-Make sure the `~/.composer/vendor/bin` directory is in your system's `PATH`.
+If you don't know that phar-composer is, just check the official repository at https://github.com/clue/phar-composer.
 
-<details>
-<summary>Show me how</summary>
+Then to make the CLI tool globally accessible you can just move it in your `bin` folder with the following command
 
-If it's not already there, add the following line to your Bash configuration file (usually `~/.bash_profile`, `~/.bashrc`, `~/.zshrc`, etc.):
+`cp dist/fux-cli.phar /usr/local/bin/fux`
 
-```
-export PATH=~/.composer/vendor/bin:$PATH
-```
+It is not recommended to use it as composer dependency in your project, instead copy the fux.phar file inside your
+project root.
 
-If the file doesn't exist, create it.
-
-Run the following command on the file you've just updated for the change to take effect:
-
-```
-source ~/.bash_profile
-```
-</details>
-
-## Use
+## Commands
 
 All you need to do is call the one of the following commands
 
-```
-fux db:iam your-name
-fux db:vcs
-```
+### Database commands
 
-## Update
+`fux db:iam {name}`
 
-```
-composer global update fux/fux-cli
-```
+Allow you to set your name/nickname for the current project. This name will be used for all vcs files that you create
+using `fux db:vcs` command.
 
-## Delete
+`fux db:vcs [filename]`
 
-```
-composer global remove fux/fux-cli
-```
+This command create an SQL file in the database vcs directory of the project with the following format
+`./db/vcs/{Y-m-d}/{H_i_s}_{filename}.sql` where the {filename} placeholder can be the filename argument or the {name}
+argument passed to `fux db:iam` command. It's recommended to execute `db:iam` command the first time, so that you can
+execute `fux db:vcs` without additional arguments.

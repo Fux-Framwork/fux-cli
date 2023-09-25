@@ -43,7 +43,7 @@ class Vcs extends Command
         $io = new SymfonyStyle($input, $output);
 
         $filename = $input->getArgument('filename');
-        $rootDir = PathUtils::getProjectRoot();
+        $rootDir = getcwd();
         if (!$filename){
             if (file_exists("$rootDir/db/.iam")) $filename = file_get_contents("$rootDir/db/.iam");
         }
@@ -77,7 +77,7 @@ class Vcs extends Command
             return Command::FAILURE;
         }
 
-        $io->success("VCS .sql file created at .$projectRelativeDir/$filename.sql");
+        $io->success("VCS .sql file created at ./$projectRelativeDir/$filename.sql");
         return Command::SUCCESS;
     }
 }
