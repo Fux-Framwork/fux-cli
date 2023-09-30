@@ -53,7 +53,7 @@ class Vcs extends Command
             return Command::INVALID;
         }
 
-        $filename = date('H_i_s')."_$filename";
+        $filename = date('H_i_s')."@$filename";
 
         $today = date('Y-m-d');
         $projectRelativeDir = "db/vcs/$today";
